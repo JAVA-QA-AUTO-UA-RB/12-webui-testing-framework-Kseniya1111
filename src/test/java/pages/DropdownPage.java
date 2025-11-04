@@ -30,10 +30,10 @@ public class DropdownPage {
         return this;
     }
 
-    public DropdownPage selectOption(String value) {
+    public DropdownPage selectOption(String optionText) {
         wait.until(ExpectedConditions.visibilityOf(dropdown));
         Select select = new Select(dropdown);
-        select.selectByValue(value);
+        select.selectByVisibleText(optionText);
         return this;
     }
 
@@ -41,4 +41,5 @@ public class DropdownPage {
         Select select = new Select(dropdown);
         return select.getFirstSelectedOption().getText();
     }
+
 }

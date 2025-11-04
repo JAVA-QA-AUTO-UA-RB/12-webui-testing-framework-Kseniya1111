@@ -40,6 +40,11 @@ public class DragAndDropPage {
         actions.dragAndDrop(columnA, columnB).perform();
         return this;
     }
+    public boolean areElementsSwapped() {
+        String textA = columnA.getText().trim();
+        String textB = columnB.getText().trim();
+        return textA.equals("B") && textB.equals("A");
+    }
 
     public String getTextInColumnA() {
         return columnA.getText();
