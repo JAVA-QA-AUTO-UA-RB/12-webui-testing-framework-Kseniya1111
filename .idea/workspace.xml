@@ -28,20 +28,7 @@
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "TestNG./Users/kseniyashabalina/disk/auto/12-webui-testing-framework-Kseniya1111/testng.xml.executor": "Run",
-    "TestNG.AbTestingTest.executor": "Run",
-    "TestNG.CucumberTestRunner.executor": "Run",
-    "TestNG.DropdownTest.executor": "Run",
-    "git-widget-placeholder": "feature/cucumber__refactoring",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
-  }
-}]]></component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/target" />
-    </key>
+
   </component>
   <component name="TaskManager">
     <servers />
