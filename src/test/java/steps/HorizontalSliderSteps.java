@@ -8,6 +8,8 @@ import pages.HorizontalSliderPage;
 public class HorizontalSliderSteps {
 
     private HorizontalSliderPage sliderPage;
+    private double initialValue;
+    private double updatedValue;
 
     @Given("I open the Horizontal Slider page")
     public void iOpenTheHorizontalSliderPage() {
@@ -15,14 +17,18 @@ public class HorizontalSliderSteps {
         sliderPage.open();
     }
 
-    @When("I move the slider to a non-zero position")
-    public void iMoveTheSliderToANonZeroPosition() {
-        sliderPage.moveSliderRight(3.0);
+    @When("I move the slider to {double}")
+    public void iMoveTheSliderTo(double targetValue) {
+        initialValue = sliderPage.getSliderValue();
+        sliderPage.moveSliderTo(targetValue);
+        updatedValue = sliderPage.getSliderValue();
     }
 
     @Then("I should see that the slider value is updated")
     public void iShouldSeeThatTheSliderValueIsUpdated() {
-        double value = sliderPage.getSliderValue();
-        Assert.assertTrue(value > 0, "Slider value did not change! Expected > 0 but got " + value);
+        Assert.assertNotEquals(updatedValue, initialValue,
+                String.format("Expected slider value to change, but stayed at %.1f", initialValue));
+        Assert.assertTrue(updatedValue >= 0 && updatedValue <= 5,
+                "Slider value out of expected range (0–5): " + updatedValue);
     }
 }

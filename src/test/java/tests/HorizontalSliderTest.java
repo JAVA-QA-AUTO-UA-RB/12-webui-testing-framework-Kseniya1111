@@ -11,7 +11,7 @@ public class HorizontalSliderTest extends BaseTest {
     public void shouldChangeSliderValueWhenMoved() {
         double valueAfter = new HorizontalSliderPage(driver)
                 .open()
-                .moveSliderRight(3)
+                .moveSliderTo(3)
                 .getSliderValue();
 
         Assert.assertNotEquals(valueAfter, 0.0, "Значення слайдера повинно змінитися!");

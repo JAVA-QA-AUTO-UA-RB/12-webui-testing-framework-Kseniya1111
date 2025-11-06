@@ -5,28 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="23e492cf-1c82-40cd-9e22-838d61b5664b" name="Changes" comment="Remove GitHub Classroom autograding configuration&#10;&#10;Deleted autograding setup files (`autograding.json` and `github-classroom.yml`) to reflect a transition away from GitHub Classroom workflows. Simplified ChromeDriver setup in tests by eliminating unnecessary arguments, improving readability and maintainability.">
-      <change afterPath="$PROJECT_DIR$/src/test/java/hooks/WebHooks.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/runners/CucumberTestRunner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/steps/AbTestingSteps.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/steps/AddRemoveElements.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/steps/AuthenticationSteps.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/steps/CheckboxesSteps.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/steps/DragAndDropSteps.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/steps/DropdownSteps.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/steps/HorizontalSliderSteps.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/AbTesting.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/AddRemoveElements.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/Autentification.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/CheckBoxes.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/DragAndDrops.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/Dropdown.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/HorizontalSlider.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/DragAndDropPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/DragAndDropPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/DropdownPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/DropdownPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/pages/HorizontalSliderPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/HorizontalSliderPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/steps/HorizontalSliderSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/HorizontalSliderSteps.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tests/HorizontalSliderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/HorizontalSliderTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/HorizontalSlider.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/HorizontalSlider.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

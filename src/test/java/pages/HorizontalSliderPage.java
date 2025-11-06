@@ -10,6 +10,7 @@ import org.openqa.selenium.support.PageFactory;
 public class HorizontalSliderPage {
 
     private final WebDriver driver;
+    private final static String PAGE_URL = "https://the-internet.herokuapp.com/horizontal_slider";
 
     @FindBy(css = "input[type='range']")
     private WebElement slider;
@@ -23,20 +24,20 @@ public class HorizontalSliderPage {
     }
 
     public HorizontalSliderPage open() {
-        driver.get("https://the-internet.herokuapp.com/horizontal_slider");
+        driver.get(PAGE_URL);
         return this;
     }
 
-
-    public HorizontalSliderPage moveSliderRight(double targetValue) {
-        Actions actions = new Actions(driver);
+    public HorizontalSliderPage moveSliderTo(double targetValue) {
         double current = getSliderValue();
-
-        while (current < targetValue) {
-            actions.moveToElement(slider).click().sendKeys(Keys.ARROW_RIGHT).perform();
+        while (Math.abs(current - targetValue) > 0.1) {
+            if (current < targetValue) {
+                slider.sendKeys(Keys.ARROW_RIGHT);
+            } else {
+                slider.sendKeys(Keys.ARROW_LEFT);
+            }
             current = getSliderValue();
         }
-
         return this;
     }
 
