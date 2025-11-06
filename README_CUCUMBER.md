@@ -372,13 +372,21 @@ public class CucumberTestRunner extends AbstractTestNGCucumberTests {
 ---
 
 ## 13. Як запускати (швидкий старт)
-- IDE: запустіть `CucumberTestRunner`.  
-- Maven: `mvn clean test -Dcucumber.filter.tags=@ui`  
-- TestNG suite: запустіть `testng.xml` з доданим класом раннера.
+Запуск Cucumber-тестів
+1. Запуск через IDE (IntelliJ IDEA)
+Відкрити проєкт у IntelliJ IDEA.
+Відкрити файл раннера, наприклад:
+src/test/java/runners/TestRunner.java
+Натиснути "Run" біля класу або методу TestRunner.
+У консолі побачите результати виконання сценаріїв (Given/When/Then) і статистику:
+Total tests run: 7, Passes: 7, Failures: 0, Skips: 0
 
-Додаткові прапорці:
-```
--Dbrowser=chrome -Dheadless=true -Dcucumber.filter.tags=@smoke
-```
+2. Запуск через Maven
+Для запуску всіх Cucumber-тестів із терміналу виконайте команду:
+mvn test
+За потреби можна фільтрувати сценарії за тегами:
+mvn test -Dcucumber.filter.tags="@ui"
+Після завершення прогону звіт буде збережений у папці:
+target/cucumber-reports/
 
-Успіхів! Якщо виникнуть питання — готуйте мінімальні приклади та логи запуску, щоб швидше їх розв'язати.
+
